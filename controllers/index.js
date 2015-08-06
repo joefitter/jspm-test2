@@ -1,7 +1,6 @@
 'use strict';
 
 import {Orchestra, $} from 'jspm-test';
-import Controller from './controllers'
 
 export default Orchestra.Controller.extend({
 
