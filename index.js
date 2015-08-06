@@ -1,7 +1,7 @@
 'use strict';
 
 import {Orchestra, Radio} from 'jspm-test';
-import Controller from './controllers'
+import Controller from './controllers/index'
 
 const channel = Radio.channel('module');
 
