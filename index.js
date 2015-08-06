@@ -8,4 +8,4 @@ const app = new Orchestra.Application({
   }
 });
 
-export default app;
+export {app};
