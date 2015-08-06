@@ -1,0 +1,15 @@
+{
+  "name": "jspm-test2",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "format": "es6",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Fitter <hello@joefitter.com> (http://joefitter.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "jspm-test": "0.0.46"
+  }
+}
