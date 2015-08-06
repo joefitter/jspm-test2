@@ -1,11 +1,22 @@
 'use strict';
 
-import {Orchestra} from 'jspm-test';
+import {Orchestra, Radio} from 'jspm-test';
+const channel = Radio.channel('module');
 
-const app = new Orchestra.Application({
+const Module = Orchestra.Module.extend({
   onStart() {
-    console.log('APP STARTED');
+    this._controller = new Controller();
+    channel.reply({
+      doSomething: this._controller.doSomething
+    }, this._controller)
+  },
+
+  onStop() {
+    console.log('stopped');
+    channel.reset();
   }
 });
 
-export {app};
+export {
+  Module
+};
