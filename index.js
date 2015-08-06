@@ -1,6 +1,6 @@
 'use strict';
 
-import Orchestra from 'jspm-test';
+import {Orchestra} from 'jspm-test';
 
 const app = new Orchestra.Application({
   onStart() {
